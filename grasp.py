@@ -187,8 +187,6 @@ def dfs(depth, flipped, history, order, score):
 					
 					del history[-1]
 
-
-
 			for k in range(j, i + 1):
 				z = cache[0][k]
 				order.set(k, z)
