@@ -132,12 +132,12 @@ def grasp(X, depth):
 	sys.stdout.write(' \nGRaSP completed in: %.2fs \n' % runtime)
 	sys.stdout.flush()
 
-	graph = np.zeros([p,p], 'uint8')
-	for y in range(p):
-		for x in order.get_parents(y):
-			graph[y,x] = 1
+# 	graph = np.zeros([p,p], 'uint8')
+# 	for y in range(p):
+# 		for x in order.get_parents(y):
+# 			graph[y,x] = 1
 
-	return graph
+	return order
 
 
 
